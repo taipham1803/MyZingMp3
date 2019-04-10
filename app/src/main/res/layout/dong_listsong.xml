@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/custom_background_playmusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_margin="11dp"
+            android:textSize="25sp"
+            android:text="1"
+            android:id="@+id/tv_danhsach_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title_song"
+            android:textSize="20sp"
+            android:text="Ten Ca Khac"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/tv_danhsach_index"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_tencasi"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/tv_danhsach_index"
+            android:layout_below="@+id/tv_title_song"
+            android:text="Ten Ca Si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/iconlove"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_soluotthich"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

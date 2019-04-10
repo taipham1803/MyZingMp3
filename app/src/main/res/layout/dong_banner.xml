@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:src="@drawable/iconads"
+        android:layout_margin="12dp"
+        android:id="@+id/iv_ads"
+        android:padding="5dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_song"
+        android:layout_alignBottom="@+id/iv_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/iv_banner"
+            android:padding="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Anh Dang O Dau Day Anh"
+            android:textSize="17sp"
+            android:id="@+id/tv_title_banner_song"
+            android:layout_alignTop="@id/iv_banner"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/iv_banner"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/tv_title_banner_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_description_song"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:text="Ca khuc moi nhat hien nay cua ca si hot nhat hien nay Son Tung MTP"
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

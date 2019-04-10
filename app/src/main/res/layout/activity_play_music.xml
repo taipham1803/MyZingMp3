@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/background_playmusic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PlayMusicActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_playmusic"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_playmusic"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_timesong_playmusic"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="00:00"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/seekbar_playmusic"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="0.5"
+                android:textColor="#ffff"
+                android:id="@+id/tv_totaltimesong_playmusic"
+                android:text="00:00"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/iconsuffle"
+                android:id="@+id/ib_suffle"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <ImageButton
+                android:scaleType="fitXY"
+                android:src="@drawable/iconpreview"
+                android:id="@+id/ib_preview"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <ImageButton
+                android:scaleType="fitXY"
+                android:src="@drawable/iconplay"
+                android:id="@+id/ib_play"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <ImageButton
+                android:scaleType="fitXY"
+                android:src="@drawable/iconnext"
+                android:id="@+id/ib_next"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <ImageButton
+                android:scaleType="fitXY"
+                android:src="@drawable/iconrepeat"
+                android:id="@+id/ib_repeat"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

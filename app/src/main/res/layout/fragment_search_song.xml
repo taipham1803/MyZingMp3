@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="#3e3ee2"
+        android:id="@+id/appbarlayout_searchsong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_searchsong"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_searchsong"
+        android:layout_below="@+id/appbarlayout_searchsong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="#f20"
+        android:id="@+id/tv_datanull_searchsong"
+        android:gravity="center"
+        android:text="Khong co du lieu bai hat"
+        android:textSize="35sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
